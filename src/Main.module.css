@@ -23,11 +23,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     height:300px;
     & .mainTitle {
         font-size: 2rem;
-        width:400px;
+        /* width:400px; */
     }
 
     & .subTitle {
@@ -36,6 +36,30 @@
         opacity: .7;
     }
 }
+
+.typingText {
+    font-weight: bold; /* 폰트 굵기 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+    line-height: 1.2;
+    /* 타이핑 커서 애니메이션 */
+    position: relative; /* 상대 위치 설정 */
+    white-space: pre-line;
+}
+  
+  .typingText::after {
+    content: '|'; /* 커서 표시 */
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite; /* 커서 깜빡임 애니메이션 */
+  }
+  
+  @keyframes cursor-blink {
+    0%, 100% {
+      opacity: 0; /* 커서 투명으로 설정 */
+    }
+    50% {
+      opacity: 1; /* 커서 불투명으로 설정 */
+    }
+  }
 
 .title {
     font-size:2rem;
@@ -101,7 +125,7 @@
     }
 }
 
-.icon {
+.infoIcon {
     height:100%;
     width:60px;
     margin:5px;
@@ -126,4 +150,43 @@
 
 .skills {
     background-color:honeydew; 
+}
+
+.skillContent {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.skill {
+    flex:1;
+    background-color: white;
+    margin:20px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.191);
+    position: relative;
+    transition: transform 0.3s; 
+
+    &:hover {
+        transform: scale(1.1); 
+    }
+}
+
+.skillTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.skillIcon {
+    height:100px;
+    position:absolute;
+    top:-30px;
+    right:-30px;
+    display:flex;
+}
+
+.skillValue {
+    margin-top:20px;
+    font-size: 1.3rem;
+    line-height: 40px;
 }

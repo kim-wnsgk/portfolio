@@ -16,7 +16,7 @@ function Banner() {
                     <Link to='/result'>About Me</Link>
                 </div>
                 <div className={styles.button}>
-                    <Link to='/result'>Skiils</Link>
+                    <Link to='/result'>Skills</Link>
                 </div>
                 <div className={styles.button}>
                     <Link to='/send'>Projects</Link>
