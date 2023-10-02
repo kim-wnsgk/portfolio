@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    width:100%;
+    background-size: cover;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.content {
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    width:1000px;
+    margin:0 auto;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    & .mainTitle {
+        font-size: 2rem;
+        width:400px;
+    }
+
+    & .subTitle {
+        width:600px;
+        margin-top: 20px;
+        opacity: .7;
+    }
+}
+
+.title {
+    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.about, .skills {
+    margin:50px auto;
+    padding:30px 10px;
+    box-sizing: border-box;
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.191);
+}
+
+.about {
+    background-color: beige;
+
+}
+
+.infos {
+    display:flex;
+}
+
+.image {
+    height:250px;
+    width:200px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.191);
+    transition: transform 0.3s; 
+
+    &:hover {
+        transform: scale(1.2); 
+    }}
+
+.infoBox {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoRow {
+    flex:1;
+    display: flex;
+    width:100%;
+}
+
+.info {
+    flex:1;
+    display: flex;
+    background-color: white;
+    margin:20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.191);
+    transition: transform 0.3s; 
+
+    &:hover {
+        transform: scale(1.2); 
+    }
+}
+
+.icon {
+    height:100%;
+    width:60px;
+    margin:5px;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.infoValue {
+    color:rgb(49, 49, 49);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.skills {
+    background-color:honeydew; 
+}
