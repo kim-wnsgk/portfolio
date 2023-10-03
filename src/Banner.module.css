@@ -1,24 +1,36 @@
 .container {
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 5px;
+    color: white;
     display: flex;
-    /* position:fixed;
-    width:100%; 스크롤 내리면 바뀌는 효과 넣기*/
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    z-index: 1;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container.scrolled {
+    background-color: white;
+    box-shadow: 1px 1px 30px rgb(240, 240, 240);
+
+    &>.title,
+    &>.content .button a {
+        color: black;
+    }
 }
 
 .title {
-    margin:10px;
-    font-size: 40px;
+    margin: 10px;
+    font-size: 45px;
     cursor: pointer;
     font-weight: bold;
-    transition: transform  0.3s; 
+    transition: transform 0.3s;
 
     &:hover {
         transform: scale(1.2);
-        color:rgb(139, 139, 139);
     }
 }
 
@@ -27,22 +39,46 @@
 }
 
 .button {
-    margin-right: 20px;
-    transition: transform 0.3s; 
+    margin-right: 40px;
+    transition: transform 0.3s;
 
     & a {
         text-decoration: none;
         font-weight: bold;
-        font-size: 18px;
-        color: black;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        font-size: 20px;
+        color: white;
     }
-    
+
     &:hover {
-        transform: scale(1.4); 
+        transform: scale(1.4);
 
     }
+}
+
+.goToTop {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.191);
+    transition: display 0.3s;
+    font-size: 2rem;
+    color: grey;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+
+    }
+}
+
+.goToTop.scrolled {
+    display: flex;
 }

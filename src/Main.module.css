@@ -5,18 +5,18 @@
 
 .container {
     height: 100%;
-    width:100%;
+    width: 100%;
     background-size: cover;
     box-sizing: border-box;
-    background-color: aliceblue;
 }
 
 .content {
     object-fit: cover;
     display: flex;
     flex-direction: column;
-    width:1000px;
-    margin:0 auto;
+    /* width: 1200px; */
+    margin: 0 auto;
+    background-color: black;
 }
 
 .first {
@@ -24,111 +24,163 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height:300px;
+    height: 500px;
+    position: relative;
+    color: white;
+
     & .mainTitle {
         font-size: 2rem;
         /* width:400px; */
     }
 
     & .subTitle {
-        width:600px;
-        margin-top: 20px;
+        width: 800px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 50px auto 0;
         opacity: .7;
     }
 }
 
+.firstImage {
+    background-image: url("/public/main.png");
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
 .typingText {
-    font-weight: bold; /* 폰트 굵기 설정 */
-    margin: 0 auto; /* 가운데 정렬 */
+    font-weight: bold;
+    /* 폰트 굵기 설정 */
+    margin: 0 auto;
+    /* 가운데 정렬 */
     line-height: 1.2;
     /* 타이핑 커서 애니메이션 */
-    position: relative; /* 상대 위치 설정 */
+    position: relative;
+    /* 상대 위치 설정 */
     white-space: pre-line;
 }
-  
-  .typingText::after {
-    content: '|'; /* 커서 표시 */
+
+.typingText::after {
+    content: '|';
+    /* 커서 표시 */
     display: inline-block;
-    animation: cursor-blink 0.8s infinite; /* 커서 깜빡임 애니메이션 */
-  }
-  
-  @keyframes cursor-blink {
-    0%, 100% {
-      opacity: 0; /* 커서 투명으로 설정 */
+    animation: cursor-blink 0.8s infinite;
+    /* 커서 깜빡임 애니메이션 */
+}
+
+@keyframes cursor-blink {
+
+    0%,
+    100% {
+        opacity: 0;
+        /* 커서 투명으로 설정 */
     }
+
     50% {
-      opacity: 1; /* 커서 불투명으로 설정 */
+        opacity: 1;
+        /* 커서 불투명으로 설정 */
     }
-  }
+}
 
 .title {
-    font-size:2rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     font-weight: bold;
 }
 
 
-.about, .skills {
-    margin:50px auto;
-    padding:30px 10px;
+.about,
+.skills,
+.projects {
+    padding: 10px;
     box-sizing: border-box;
-    width:100%;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.191);
+    width: 100%;
+    /* border-radius: 10px; */
+
+}
+
+.detailContent {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .about {
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
 
+}
+
+.github {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    width: 70px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .infos {
-    display:flex;
+    display: flex;
 }
 
-.image {
-    height:250px;
-    width:200px;
-    background-color: white;
-    border-radius: 100px;
+.profile {
+    height: 250px;
+    width: 200px;
+    background-image: url('/public/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.191);
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 
     &:hover {
-        transform: scale(1.2); 
-    }}
+        transform: scale(1.2);
+    }
+}
 
 .infoBox {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .infoRow {
-    flex:1;
+    flex: 1;
     display: flex;
-    width:100%;
+    width: 100%;
 }
 
 .info {
-    flex:1;
+    flex: 1;
     display: flex;
     background-color: white;
-    margin:20px;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.191);
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 
     &:hover {
-        transform: scale(1.2); 
+        transform: scale(1.2);
     }
 }
 
 .infoIcon {
-    height:100%;
-    width:60px;
-    margin:5px;
+    height: 100%;
+    width: 60px;
+    margin: 5px;
 }
 
 .infoContent {
@@ -143,32 +195,33 @@
 }
 
 .infoValue {
-    color:rgb(49, 49, 49);
+    color: rgb(49, 49, 49);
     margin-top: 20px;
     font-weight: bold;
 }
 
 .skills {
-    background-color:honeydew; 
+    background-color: rgb(255, 199, 96);
 }
 
 .skillContent {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
 }
+
 .skill {
-    flex:1;
+    flex: 1;
     background-color: white;
-    margin:20px;
-    padding:20px;
+    margin: 20px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.191);
     position: relative;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 
     &:hover {
-        transform: scale(1.1); 
+        transform: scale(1.1);
     }
 }
 
@@ -178,15 +231,19 @@
 }
 
 .skillIcon {
-    height:100px;
-    position:absolute;
-    top:-30px;
-    right:-30px;
-    display:flex;
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    display: flex;
 }
 
 .skillValue {
-    margin-top:20px;
+    margin-top: 20px;
     font-size: 1.3rem;
     line-height: 40px;
+}
+
+.projects {
+    background-color: aquamarine;
 }
