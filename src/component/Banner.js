@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Banner.module.css'
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function Banner() {
@@ -41,7 +41,7 @@ function Banner() {
             </div>
             <div className={styles.content}>
                 <div className={styles.button}>
-                    <Link to='/result'>About Me</Link>
+                    <Link to='/result'>Profile</Link>
                 </div>
                 <div className={styles.button}>
                     <Link to='/result'>Skills</Link>
