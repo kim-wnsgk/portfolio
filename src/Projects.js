@@ -12,6 +12,36 @@ function Projects() {
             <div className={styles.content}>
                 <div className={styles.project}>
                     <div className={styles.projectTitle}>
+                        여행 정보 사이트 - 여기저기
+                    </div>
+                    <div className={styles.date}>
+                        2023.04~
+                    </div>
+                    <div className={styles.explain}>
+                        <li>코로나 감소세로 인한 여행 증가에 따라 여행객들이 필요한 정보를 제공, 계획을 세우는데 도움이 되는 기능을 제공하는 주제이다.</li>
+                    </div>
+                    <div className={styles.value}>
+                        <div>주요 기능 : </div>
+                        <li>지역별 여행 정보 제공하여 여행 정보 추천, 여행지 추천</li>
+                        <li>모임 기능을 통해 여행원 모집, 함께 여행 코스 설계</li>
+                        <li>게시판 기능을 통해 다른 사용자들과 소통</li>
+                    </div>
+                    <div className={styles.skill}>
+                        사용기술 : React, Node.js(express), Mysql, 한국관광공사 Open API
+                    </div>
+                    <div className={styles.my}>
+                        <div>내 역할 : </div>
+                        <li>Open api를 통해 전국의 여행지 정보를 데이터베이스에 저장, 각 여행지 정보 출력 및 여행지 추천</li>
+                        <li>모임원 추가 및 모임원 관리 기능</li>
+                        <li>Node.js - mysql과 세션을 이용한 로그인 기능</li>
+                        <li>전체적인 디자인</li>
+                    </div>
+                    <div className={styles.link}>
+                        Code: <Link to="https://github.com/kim-wnsgk/travel" target='blank'><AiFillGithub size="5%" /></Link>
+                    </div>
+                </div>
+                <div className={styles.project}>
+                    <div className={styles.projectTitle}>
                         Silvable
                     </div>
                     <div className={styles.date}>
@@ -74,60 +104,7 @@ function Projects() {
                         Address: <Link to="https://kim-wnsgk.github.io/daou/" target='blank'><BsLink45Deg size="5%" /></Link>
                     </div>
                 </div>
-                <div className={styles.project}>
-                    <div className={styles.projectTitle}>
-                        여행 정보 사이트 - 여기저기
-                    </div>
-                    <div className={styles.date}>
-                        2023.04~
-                    </div>
-                    <div className={styles.explain}>
-                        <li>코로나 감소세로 인한 여행 증가에 따라 여행객들이 필요한 정보를 제공, 계획을 세우는데 도움이 되는 기능을 제공하는 주제이다.</li>
-                    </div>
-                    <div className={styles.value}>
-                        <div>주요 기능 : </div>
-                        <li>지역별 여행 정보 제공하여 여행 정보 추천, 여행지 추천</li>
-                        <li>모임 기능을 통해 여행원 모집, 함께 여행 코스 설계</li>
-                        <li>게시판 기능을 통해 다른 사용자들과 소통</li>
-                    </div>
-                    <div className={styles.skill}>
-                        사용기술 : React, Node.js(express), Mysql, 한국관광공사 Open API
-                    </div>
-                    <div className={styles.my}>
-                        <div>내 역할 : </div>
-                        <li>Open api를 통해 전국의 여행지 정보를 데이터베이스에 저장, 각 여행지 정보 출력 및 여행지 추천</li>
-                        <li>모임원 추가 및 모임원 관리 기능</li>
-                        <li>Node.js - mysql과 세션을 이용한 로그인 기능</li>
-                        <li>전체적인 디자인</li>
-                    </div>
-                    <div className={styles.link}>
-                        Code: <Link to="https://github.com/kim-wnsgk/travel" target='blank'><AiFillGithub size="5%" /></Link>
-                    </div>
-                </div>
-                <div className={styles.project}>
-                    <div className={styles.projectTitle}>
-                        Starry Day - 별 관측 웹 개인 프로젝트
-                    </div>
-                    <div className={styles.date}>
-                        2023.09~
-                    </div>
-                    <div className={styles.explain}>
-                        <li>빛 공해, 날씨, 월광 등의 정보를 이용하여 원하는 지역이나, 별 관측 유명지의 현재, 미래 별 관측 지수 정보 보기 등의 별 관측 관련 기능을 제공하도록 제작 중이다.</li>
-                    </div>
-                    <div className={styles.value}>
-                        <div>주요 기능 : </div>
-                        <li>선택 지역 or 유명 지역의 별 관측 지수 확인</li>
-                        <li>날씨, 월광 등을 확인하여 별 보기 좋은 날짜/시간, 장소 추천</li>
-                        <li>천체 관련 소식 제공</li>
-                        <li>각 사용자의 관측 정보 등 게시판 형태로 자유롭게 공유</li>
-                    </div>
-                    <div className={styles.skill}>
-                        사용기술 : React, Node.js(express), Mysql, Open API
-                    </div>
-                    <div className={styles.link}>
-                        Code: <Link to="https://github.com/kim-wnsgk/starry" target='blank'><AiFillGithub size="5%" /></Link>
-                    </div>
-                </div>
+                
             </div>
         </div>
     );

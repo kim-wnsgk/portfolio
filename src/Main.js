@@ -19,7 +19,7 @@ function Main() {
     const typingSpeed = 70; // 타이핑 속도 (밀리초)
 
     useEffect(() => {
-        const fullText = '프론트엔드 신입 개발자\n김준하입니다.';
+        const fullText = '신입 개발자\n김준하입니다.';
 
         // 타이핑 효과를 시뮬레이션하기 위한 타이머
         const timer = setInterval(() => {

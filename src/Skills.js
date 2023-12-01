@@ -106,23 +106,17 @@ function Skills() {
                             <li>프로젝트의 버전 관리 및 협업을 원활하게 수행했습니다.</li>
                         </div>
                         <div className={styles.skillTitle}>
-                            Slack/Notion
-                        </div>
-                        <div className={styles.skillValue}>
-                            <li>팀과의 실시간 소통을 원활하게 유지하고 프로젝트 업무를 조율했습니다.</li>
-                            <li>프로젝트 관리, 문서 공유, 일정 조정, 회의록 작성 등을 수행하여 효율적인 협업을 수행했습니다.</li>
-                        </div>
-                        <div className={styles.skillTitle}>
                             Docker/Kubernetes
                         </div>
                         <div className={styles.skillValue}>
                             <li>기본적인 간단한 컨테이너 생성을 해본 경험이 있습니다.</li>
                         </div>
                         <div className={styles.skillTitle}>
-                            Unity
+                            AWS
                         </div>
                         <div className={styles.skillValue}>
-                            <li>간단한 3D 그래픽/애니메이션 제작을 했습니다.</li>
+                        <li>EC2를 이용한 프론트엔드, 백엔드 서버 배포 경험이 있습니다.</li>
+                        <li>RDS를 이용한 DB 배포 경험이 있습니다..</li>
                         </div>
                     </div>
                 </div>
