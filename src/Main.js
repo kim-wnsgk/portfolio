@@ -52,9 +52,16 @@ function Main() {
                         실수가 없도록 꼼꼼하게 검토하는 습관을 지니고 있습니다.
                     </div>
                 </div>
-                <Profile />
-                <Skills />
-                <Projects />
+                <div id='profile'>
+                    <Profile/>
+                </div>
+                <div id='skills'>
+                    <Skills />
+                </div>
+                <div id='projects'>
+                    <Projects />
+                </div>
+                
             </div>
         </div>
     );

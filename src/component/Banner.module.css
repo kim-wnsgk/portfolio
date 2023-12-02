@@ -4,6 +4,7 @@
     color: white;
     display: flex;
     position: fixed;
+    height:100px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +42,7 @@
 .button {
     margin-right: 40px;
     transition: transform 0.3s;
-
+    cursor: pointer;
     & a {
         text-decoration: none;
         font-weight: bold;

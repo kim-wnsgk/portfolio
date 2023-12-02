@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Banner.module.css'
 import { Link, useNavigate } from 'react-router-dom';
-
+import {Link as ScrollLink} from 'react-scroll';
 
 function Banner() {
     const navigate = useNavigate();
@@ -36,22 +36,28 @@ function Banner() {
                 }}>
                 ^
             </div>
-            <div className={styles.title} onClick={() => navigate('/')}>
+            <div className={styles.title} 
+                onClick={() => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth',
+                    });
+                }}>
                 Portfolio
             </div>
             <div className={styles.content}>
                 <div className={styles.button}>
-                    <Link to='/result'>Profile</Link>
+                    <ScrollLink to='profile' smooth={true} duration={500} offset={-100}>Profile</ScrollLink>
                 </div>
                 <div className={styles.button}>
-                    <Link to='/result'>Skills</Link>
+                    <ScrollLink to='skills' smooth={true} duration={500} offset={-100}>Skills</ScrollLink>
                 </div>
                 <div className={styles.button}>
-                    <Link to='/send'>Projects</Link>
+                    <ScrollLink to='projects' smooth={true} duration={500} offset={-100}>Projects</ScrollLink>
                 </div>
-                <div className={styles.button}>
-                    <Link to='/send'>More Info</Link>
-                </div>
+                {/* <div className={styles.button}>
+                    <ScrollLink to='info' smooth={true} duration={500}>More Info</ScrollLink>
+                </div> */}
             </div>
         </div>
 
